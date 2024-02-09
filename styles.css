@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+
+}
+
+body {
+    height: 100vh ;
+    background: url('images/pexels-tahir-shaw-186980.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(0deg, #157c0070, #34e1ff7d);
+    color: #000;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #f1fffd;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 15px;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: fantasy;
+    color: #003b6f;
+}
+
+.search button  {
+    border: 0;
+    outline: 0;
+    background: #f1fffd;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+
+}
+
+.search button img {
+    width: 24px;
+}
+
+.icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 84px;
+    font-weight: 600;
+}
+
+.weather h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: azure;
+}
+
+.col img {
+    width:40px;
+    margin-right: 10px;
+    
+}
+
+.humidity , .wind {
+    font-size: 24px;
+    color: #00d9ff;
+    font-weight: 100;
+    margin-top: 5px;
+}

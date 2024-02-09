@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="card">
+        
+        <div class="search">
+            <input type="text" name="location" id="location" placeholder="enter city name" spellcheck="false">
+            <button id="getLocation"><img src="./images/map-search.png" alt="search button"></button>
+        </div>
+
+        <div class="weather">
+
+            <img src="images/rain.png" alt="rain icon" class="icon" id="icon">
+            <h1 class="temp" id="temp">22°C</h1>
+            <h2 class="city" id="city">Casablanca</h2> 
+
+            <div class="details">
+
+                <div class="col">
+
+                    <img src="images/humidity.png" alt="humidity icon">
+                    
+                    <div>
+
+                        <p>Humidity</p>
+                        <p class="humidity" id="humidity">50%</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <img src="images/wind.png" alt="humidity icon">
+                    
+                    <div>
+
+                        <p>Wind</p>
+                        <p class="wind" id="wind">15 km/h%</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="weather.js" defer></script>
+
+</body>
+</html>
