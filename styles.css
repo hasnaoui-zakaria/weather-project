@@ -7,7 +7,8 @@
 }
 
 body {
-    height: 100vh ;
+    max-width: 100vw;
+    min-height: 100vh;
     background: url('images/pexels-tahir-shaw-186980.jpg');
     background-size: cover;
     display: flex;
@@ -16,43 +17,44 @@ body {
 }
 
 .card {
-    width: 90%;
-    max-width: 500px;
     background: linear-gradient(0deg, #157c0070, #34e1ff7d);
     color: #000;
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
 
 }
 
 .search {
     width: 100%;
+    padding: 0px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #d3d3d3a0;
+    position: relative;
 }
 
 .search input {
     border: 0;
     outline: 0;
-    background: #f1fffd;
-    padding: 10px 20px;
-    height: 50px;
-    border-radius: 20px;
-    flex: 1;
-    margin-right: 15px;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    margin-right: 0px;
     font-size: 24px;
     font-weight: 300;
     font-family: fantasy;
     color: #003b6f;
+    border-radius: 20px;
 }
 
 .search button  {
+    position: absolute;
+    right: 10px;
     border: 0;
     outline: 0;
-    background: #f1fffd;
-    border-radius: 20px;
+    background: transparent;
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -105,4 +107,16 @@ body {
     color: #00d9ff;
     font-weight: 100;
     margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .card {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+    }
 }
